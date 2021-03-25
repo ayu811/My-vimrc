@@ -1,0 +1,9 @@
+[[plugins]]
+repo = 'pepo-le/win-ime-con.nvim'
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+rev = 'release'
+merged = 0
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
