@@ -14,8 +14,8 @@ set showcmd
 
 " 見た目系
 "カラーテーマ
- set background=dark
- colorscheme solarized
+set background=dark
+colorscheme solarized
 let g:solarized_termcolors=256
 highlight CocFloating ctermbg=7
 highlight CocErrorFloat ctermfg=red
@@ -39,7 +39,7 @@ nnoremap k gk
 " シンタックスハイライトの有効化
 syntax enable
 "font
-set guifont=Ricty\Diminished:h12
+set guifont=HackGenNerd:20
 
 " Tab系
 " 不可視文字を可視化(タブが「▸-」と表示される)
@@ -295,14 +295,7 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
-
-
-
-
-
-
-
-
+"defx.vim 設定
 
 
 
