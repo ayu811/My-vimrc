@@ -27,25 +27,15 @@ repo = 'kristijanhusak/defx-icons'
 repo = 'kristijanhusak/defx-git'
 
 [[plugins]]
-repo = 'Shougo/denite.nvim'
-hook_add = """
-source ~/.config/nvim/plugins/denite.rc.vim
-"""
-
-[[plugins]]
-repo = 'Shougo/vimproc.vim'
-hook_post_update = '''
-  if dein#util#_is_windows()
-    let cmd = 'tools\\update-dll-mingw'
-  elseif dein#util#_is_cygwin()
-    let cmd = 'make -f make_cygwin.mak'
-  elseif executable('gmake')
-    let cmd = 'gmake'
-  else
-    let cmd = 'make'
-  endif
-  let g:dein#plugin.build = cmd
+repo = 'fatih/vim-go'
+hook_add = '''
+  " 保存時に必要なimportを自動的に挿入
+  let g:go_fmt_command = "goimports"
+  " LSPに任せる機能をOFFにする
+  let g:go_def_mapping_enabled = 0
+  let g:go_doc_keywordprg_enabled = 0
 '''
+
 
 [[plugins]]
 repo = 'jlanzarotta/bufexplorer'
